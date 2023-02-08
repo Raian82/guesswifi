@@ -17,7 +17,7 @@ function Signup() {
 
   return (
     <div className="container">
-      <h1 className="title">Sign Up</h1>
+      <h1 className="title">Sign Up for Guess</h1>
       <form className="form" onSubmit={handleSubmit}>
         <label className="label">
           ID Number:
