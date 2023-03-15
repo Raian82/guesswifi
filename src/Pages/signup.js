@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './signup.css';
-import { Link as RouterLink } from "react-router-dom";
-import { Link } from "react-router-dom/dist/umd/react-router-dom.development";
+import '../css/signup.css';
+import { Link as RouterLink } from 'react-router-dom';
+import { Link } from 'react-router-dom/dist/umd/react-router-dom.development';
 
 function Signup() {
   const [IDNumber, setUsername] = useState('');
@@ -9,11 +9,13 @@ function Signup() {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     // Perform sign-up logic
-    console.log(`Signing up with ${IDNumber}, ${email}, ${password}, and ${confirmPassword}`);
-  }
+    console.log(
+      `Signing up with ${IDNumber}, ${email}, ${password}, and ${confirmPassword}`
+    );
+  };
 
   return (
     <div className="container">
@@ -25,7 +27,7 @@ function Signup() {
             className="input"
             type="text"
             value={IDNumber}
-            onChange={e => setUsername(e.target.value)}
+            onChange={(e) => setUsername(e.target.value)}
           />
         </label>
         <br />
@@ -35,7 +37,7 @@ function Signup() {
             className="input"
             type="email"
             value={email}
-            onChange={e => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </label>
         <br />
@@ -45,7 +47,7 @@ function Signup() {
             className="input"
             type="password"
             value={password}
-            onChange={e => setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </label>
         <br />
@@ -55,14 +57,16 @@ function Signup() {
             className="input"
             type="password"
             value={confirmPassword}
-            onChange={e => setConfirmPassword(e.target.value)}
+            onChange={(e) => setConfirmPassword(e.target.value)}
           />
         </label>
         <br />
-        <button className="button" type="submit">Sign Up</button>
-        <div style={{direction:'column', display: 'flex'}}>
+        <button className="button" type="submit">
+          Sign Up
+        </button>
+        <div style={{ direction: 'column', display: 'flex' }}>
           <p>Already have an account?</p>
-          <Link component={RouterLink} to="/" style={{marginTop: 15}}>
+          <Link component={RouterLink} to="/" style={{ marginTop: 15 }}>
             Login
           </Link>
         </div>
