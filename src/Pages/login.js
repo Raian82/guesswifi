@@ -54,10 +54,9 @@ export default function Login() {
       <div className="panels-container">
         <div className="panel left-panel">
           <div className="content">
-            <h2 className='welcome_title'>Welcome to MSUans!</h2>
+            <h2 className='welcome_title'>Welcome MSUans!</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-              ex ratione. Aliquid!
+              Stay connected with GUESS to the world of endless possibilities, and unlock new discoveries every day! 
             </p>
             <button className="btn transparent" id="sign-up-btn">
               Sign up
@@ -69,8 +68,7 @@ export default function Login() {
           <div className="content">
             <h3>One of us ?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              laboriosam ad deleniti.
+              Join us and be part of unlocking discoveries!
             </p>
             <button className="btn transparent" id="sign-in-btn">
               Sign in
